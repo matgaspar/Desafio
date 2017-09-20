@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/campos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/botoes">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+    <TextView
+        android:id="@+id/lbl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Primeiro Número"
+        android:textSize="50px"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numero1"
+        android:layout_below="@+id/lbl1"
+        android:numeric="decimal" />
+
+    <TextView
+        android:id="@+id/lbl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Segundo Número"
+        android:layout_below="@+id/numero1"
+        android:textSize="50px"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numero2"
+        android:layout_below="@+id/lbl2"
+        android:numeric="decimal"/>
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/botoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/soma"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:text="+"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subtrair"
+            android:layout_toRightOf="@+id/soma"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:text="-"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/multiplicar"
+            android:layout_toRightOf="@+id/subtrair"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:text="x"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dividir"
+            android:layout_toRightOf="@+id/multiplicar"
+            android:textSize="50px"
+            android:textStyle="bold"
+            android:text="/"/>
+    </RelativeLayout>
+</RelativeLayout>
