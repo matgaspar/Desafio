@@ -1,3 +1,3 @@
-[b]DESAFIO[/b]
+DESAFIO
 
 Arquivos referentes ao trabalho denominado Desafio elaborado em sala de aula.
